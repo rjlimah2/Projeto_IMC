@@ -19,7 +19,6 @@ Este é um projeto simples de um **Cálculo de IMC** desenvolvida com **Python**
 Linkedin - https://www.linkedin.com/in/rodrigorjlima/
 
 ## 📷 Exemplo de Uso
-Copia e cola o link no seu navegador
 
 Imagem 01 - Tela inicial (https://github.com/user-attachments/assets/29c2c4fe-0325-4e4b-af5b-5a6a09e51034)
 
@@ -29,5 +28,6 @@ Imagem 02 - Tela do resultado (https://github.com/user-attachments/assets/7d2a51
 
 1. Clone o repositório:
 
-git clone https://github.com/rjlimah2/imc.git
-cd imc
+git clone https://github.com/rjlimah2/Projeto_IMC.git
+
+cd Projeto_IMC
