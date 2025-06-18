@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>IMC - Índice de Massa Corporal</title>
+    <link rel="stylesheet" type="text/css" href="{{url_for('static', filename='estilo.css')}}">
+</head>
+
+<body class="pag_imc">
+
+    <div class="div_principal">
+        <header>Um Peso uma Medida
+        </header>
+        <p>Você esta acima do peso?
+        <p>Realize o teste aqui!!!</p>
+
+        <form action="/resultado" method="post">
+            <table>
+                <th>Consultado IMC</th>
+
+                <tr>
+                    <td>Nome:<input type=text name="nome" maxlength="40" placeholder="Digite seu nome" required></td>
+                </tr>
+
+                <tr>
+                    <td>Idade:<input type=number name="idade" maxlength="3" placeholder="Digite sua idade" required>
+                    </td>
+                </tr>
+
+                <tr>
+                    <td>Peso:<input type="text" name="peso" maxlength="3" placeholder="Digite seu peso" required></td>
+                </tr>
+
+                <tr>
+                    <td>Altura:<input type="text" name="altura" maxlength="4" placeholder="Digite sua altura" required>
+                    </td>
+                </tr>
+
+                <tr>
+                    <td><input class="botao_enviar" type="submit" name="botao_enviar" value="Enviar Formulário">
+                    </td>
+                </tr>
+
+                <tr>
+                    <td>
+                        <input class="botao_limpar" type="reset" value="Limpar">
+                    </td>
+                </tr>
+        </form>
+        </table>
+    </div>
+
+</body>
+
+</html>

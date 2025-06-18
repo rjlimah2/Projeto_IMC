@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Resultado</title>
+
+    <link rel="stylesheet" type="text/css" href="{{url_for('static', filename='res_estilo.css')}}">
+</head>
+
+<body class="pag_res">
+    <div class="divi">
+        <h1>Tabela de IMC</h1>
+        <p>A tabela abaixo apresenta a classificação dos índices de massa corporal (IMC) conforme os critérios
+            estabelecidos pela Organização Mundial da Saúde (OMS).</p>
+
+        <table>
+            <thead>
+                <tr>
+                    <th>IMC (Kg/m²)</th>
+                    <th>Classificação</th>
+                </tr>
+            </thead>
+
+            <tr>
+                <th>Menor que 18,5</th>
+                <th>Baixo Peso
+                <th>
+            </tr>
+            <tr>
+                <th>De 18,5 a 24,9</th>
+                <th>Peso normal</th>
+            </tr>
+            <tr>
+                <th>De 25 a 29,9</th>
+                <th>Sobrepeso</th>
+            </tr>
+            <tr>
+                <th>De 30 a 34,9</th>
+                <th>Obesidade grau |</th>
+            </tr>
+            <tr>
+                <th>De 35 a 39,9</th>
+                <th>Obesidade grau ||</th>
+            </tr>
+            <tr>
+                <th>Igual ou maior que 40</th>
+                <th>Obesidade grau |||</th>
+            </tr>
+        </table>
+
+        <h1>Resultado do seu teste!</h1>
+        <p>Nome: {{ nome }}</p>
+        <p>Idade: {{ idade }}</p>
+        <p>Peso: {{ peso }}Kg</p>
+        <p>Altura: {{ altura }}m</p>
+        <p>Resultado: {{ res }}</p>
+    </div>
+</body>
+
+</html>
